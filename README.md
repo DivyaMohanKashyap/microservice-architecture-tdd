@@ -19,7 +19,7 @@ Welcome to microservice-architecture-tdd, a comprehensive example of building a 
 
 - **Test-Driven Development (TDD):** Experience the power of TDD in building microservices, ensuring code quality, and making your architecture robust and resilient.
 
-- **Dockerized Setup:** Facilitate seamless deployment and scaling with Docker containers, ensuring consistency across different environments.
+- **Dockerized Setup:** Setting up Laravel in the local environment with Docker using the LEMP stack that includes: Nginx, MySQL, PHP, and phpMyAdmin.
 
 ## Getting Started
 
@@ -36,15 +36,22 @@ Follow the steps below to get started with the project:
     ```
 
 3. **Set up your laravel project.**
-    ```bash
-    composer install
-    ```
+   
+   **Copy .env.example to .env.**
+   		cp .env.example .env
+	**Set Up MySQL database**
+	Uncomment the MySQL configuration inside the docker-compose.yml including: db and phpMyAdmin
+		Change DB_CONNECTION to mysql
+		Change DB_HOST to db
+		Change DB_PORT to 3306
+		Open the phpMyAdmin on 127.0.0.1:3400
 
 4. **Run the microservices and accompanying services using Docker:**
     ```bash
-    docker-compose up -d
-    ```
-
+	docker-compose build
+    docker compose up -d
+	```
+	
 5. **Access the microservices and start building!**
     ```bash
     http://localhost:8080/api/users/1
