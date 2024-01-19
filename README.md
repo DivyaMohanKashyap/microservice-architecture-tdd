@@ -52,17 +52,20 @@ Follow the steps below to get started with the project:
 
 ## Postman
 
-This endpoint makes an HTTP GET request to retrieve user information by ID. The request should be made to [http://localhost:8080/api/users/1](http://localhost:8080/api/users/2).
+This endpoint sends an HTTP GET request to retrieve user information based on the user ID.
 
-### Request Description
+### Request
 
-No request body is required for this request.
+- Method: GET
+- Headers: X-API-KEY
+- URL: `http://localhost:8080/api/users/1`
+    
 
 ### Response
 
 - Status: 200 OK
-- Body:
-    
+- Body:    
+
     ``` json
       {
           "id": 0,
@@ -75,7 +78,7 @@ No request body is required for this request.
      ```
     
       
-* The response contains the user's ID, name, email, creation timestamp, and last update timestamp.
+- The response contains the user's ID, name, email, creation timestamp, and last update timestamp.
 
 
 Happy coding!
