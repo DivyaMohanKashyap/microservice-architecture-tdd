@@ -65,7 +65,9 @@ class UserTest extends TestCase
      */
     public function test_get_a_user(): void
     {
-        $response = $this->getJson(route("users.show", 1))
+        $response = $this->getJson(route("users.show", 1), [
+            'X-API-Key' => config('app.api_key'),
+        ])
             ->assertOk()
             ->json();
         
@@ -81,7 +83,9 @@ class UserTest extends TestCase
      */
     public function test_get_a_user_with_non_existing_user_id(): void 
     {
-        $response = $this->getJson(route('users.show', 23))
+        $response = $this->getJson(route('users.show', 23), [
+            'X-API-Key' => config('app.api_key'),
+        ])
             ->assertNotFound();
     }
 }
