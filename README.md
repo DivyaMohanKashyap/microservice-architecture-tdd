@@ -36,15 +36,16 @@ Follow the steps below to get started with the project:
     ```
 
 3. **Set up your laravel project.**
-   
-   **Copy .env.example to .env.**
-   		cp .env.example .env
-	**Set Up MySQL database**
-	Uncomment the MySQL configuration inside the docker-compose.yml including: db and phpMyAdmin
-		Change DB_CONNECTION to mysql
-		Change DB_HOST to db
-		Change DB_PORT to 3306
-		Open the phpMyAdmin on 127.0.0.1:3400
+	* **Copy .env.example to .env.**
+		```bash
+		cp .env.example .env
+		```
+		
+	* **Set Up MySQL database**
+		* Uncomment db and phpmyadmin images in docker-composer
+		* Change DB_CONNECTION to mysql
+		* Change DB_HOST to db
+		* Change DB_PORT to 3306
 
 4. **Run the microservices and accompanying services using Docker:**
     ```bash
@@ -54,7 +55,8 @@ Follow the steps below to get started with the project:
 	
 5. **Access the microservices and start building!**
     ```bash
-    http://localhost:8080/api/users/1
+    application => http://localhost:8080/api/users/1
+	phpMyAdmin => http://localhost:3400
     ```
 
 ## Postman
@@ -63,9 +65,9 @@ This endpoint sends an HTTP GET request to retrieve user information based on th
 
 ### Request
 
-- Method: GET
-- Headers: X-API-KEY
-- URL: `http://localhost:8080/api/users/1`
+- Method : `GET`
+- Headers : `{X-API-KEY: OsoQjgnCnHqld9HOuShDawWMHyHv9cxX5r6kL62DOYcmwKd7sV}`
+- URL : `http://localhost:8080/api/users/1`
     
 
 ### Response
