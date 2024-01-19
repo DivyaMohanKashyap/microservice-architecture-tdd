@@ -46,7 +46,9 @@ Follow the steps below to get started with the project:
     ```
 
 5. **Access the microservices and start building!**
-
+    ```bash
+    http://localhost:8080/api/users/1
+    ```
 
 ## Postman
 
