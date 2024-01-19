@@ -52,7 +52,7 @@ Follow the steps below to get started with the project:
 
 ## Postman
 
-This endpoint makes an HTTP GET request to retrieve user information by ID. The request should be made to [http://localhost:8000/api/users/1](http://localhost:8000/api/users/2).
+This endpoint makes an HTTP GET request to retrieve user information by ID. The request should be made to [http://localhost:8080/api/users/1](http://localhost:8080/api/users/2).
 
 ### Request Description
 
