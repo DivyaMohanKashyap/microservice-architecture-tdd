@@ -1,9 +1,10 @@
-## About Laravel
+# Microservice Architecture with Laravel and Test-Driven Development (TDD)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**microservice-architecture-tdd**
 
-## Project Installation Guide
+Welcome to microservice-architecture-tdd, a comprehensive example of building a scalable microservices architecture using Laravel, accompanied by a strong emphasis on Test-Driven Development (TDD). This project serves as a robust foundation for developing distributed systems, ensuring maintainability, scalability, and reliability.
+
+# Project Installation Guide
 
 ## Postman Microservices
 
@@ -31,3 +32,48 @@ No request body is required for this request.
     
       
     The response contains the user's ID, name, email, creation timestamp, and last update timestamp.
+
+
+# Microservice Architecture with Laravel and Test-Driven Development (TDD)
+
+Welcome to **microservice-architecture-tdd**, a comprehensive example of building a scalable microservices architecture using Laravel, accompanied by a strong emphasis on Test-Driven Development (TDD). This project serves as a robust foundation for developing distributed systems, ensuring maintainability, scalability, and reliability.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+
+## Features
+
+- **Laravel Microservices:** Implement a small microservice using the Laravel framework, allowing for modular and independent service development.
+
+- **Test-Driven Development (TDD):** Experience the power of TDD in building microservices, ensuring code quality, and making your architecture robust and resilient.
+
+- **Dockerized Setup:** Facilitate seamless deployment and scaling with Docker containers, ensuring consistency across different environments.
+
+## Getting Started
+
+Follow the steps below to get started with the project:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/DiivyaMohanKashyap/microservice-architecture-tdd.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd microservice-architecture-tdd
+    ```
+
+3. **Set up your laravel project with docker configurations.**
+
+4. **Run the microservices and accompanying services using Docker:**
+    ```bash
+    docker-compose up -d
+    ```
+
+5. **Access the microservices and start building!**
+
+Happy coding!
