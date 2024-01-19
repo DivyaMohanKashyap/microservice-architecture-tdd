@@ -35,7 +35,10 @@ Follow the steps below to get started with the project:
     cd microservice-architecture-tdd
     ```
 
-3. **Set up your laravel project with docker configurations.**
+3. **Set up your laravel project.**
+    ```bash
+    composer install
+    ```
 
 4. **Run the microservices and accompanying services using Docker:**
     ```bash
