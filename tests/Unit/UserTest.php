@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Unit;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -27,6 +27,34 @@ class UserTest extends TestCase
         parent::setUp();
         $this->withExceptionHandling();
         $this->user = User::factory()->create();
+    }
+
+    /**
+     * Fail test without api Key
+     * Status Code : 403
+     *
+     * @return void
+     */
+    public function test_fail_without_api_key(): void
+    {
+        $response = $this->getJson(route("users.show", 1));
+
+        $response->assertForbidden();
+    }
+
+    /**
+     * Test Fail when wrong X-API-KEY is provided
+     * Status Code : 403
+     *
+     * @return void
+     */
+    public function test_fail_with_wrong_api_key(): void
+    {
+        $response = $this->getJson(route("users.show", 1), [
+            'X-API-Key' => 'a-wrong-key'
+        ]);
+
+        $response->assertForbidden();
     }
 
     /**
