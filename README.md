@@ -6,44 +6,12 @@ Welcome to microservice-architecture-tdd, a comprehensive example of building a 
 
 # Project Installation Guide
 
-## Postman Microservices
-
-This endpoint makes an HTTP GET request to retrieve user information by ID. The request should be made to [http://localhost:8000/api/users/1](http://localhost:8000/api/users/2).
-
-### Request Description
-
-No request body is required for this request.
-
-### Response
-
-- Status: 200 OK
-- Body:
-    
-    ``` json
-      {
-          "id": 0,
-          "name": "Divyamohan Kashyap",
-          "email": "divyamohan.kashyap06@gmail.com",
-          "created_at": "2024-01-19T22:26:04.000000Z",
-          "updated_at": "2024-01-19T22:26:04.000000Z"
-      }
-    
-     ```
-    
-      
-    The response contains the user's ID, name, email, creation timestamp, and last update timestamp.
-
-
-# Microservice Architecture with Laravel and Test-Driven Development (TDD)
-
-Welcome to **microservice-architecture-tdd**, a comprehensive example of building a scalable microservices architecture using Laravel, accompanied by a strong emphasis on Test-Driven Development (TDD). This project serves as a robust foundation for developing distributed systems, ensuring maintainability, scalability, and reliability.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
+- [Postman](#postman)
 
 ## Features
 
@@ -75,5 +43,34 @@ Follow the steps below to get started with the project:
     ```
 
 5. **Access the microservices and start building!**
+
+
+## Postman
+
+This endpoint makes an HTTP GET request to retrieve user information by ID. The request should be made to [http://localhost:8000/api/users/1](http://localhost:8000/api/users/2).
+
+### Request Description
+
+No request body is required for this request.
+
+### Response
+
+- Status: 200 OK
+- Body:
+    
+    ``` json
+      {
+          "id": 0,
+          "name": "Divyamohan Kashyap",
+          "email": "divyamohan.kashyap06@gmail.com",
+          "created_at": "2024-01-19T22:26:04.000000Z",
+          "updated_at": "2024-01-19T22:26:04.000000Z"
+      }
+    
+     ```
+    
+      
+* The response contains the user's ID, name, email, creation timestamp, and last update timestamp.
+
 
 Happy coding!
