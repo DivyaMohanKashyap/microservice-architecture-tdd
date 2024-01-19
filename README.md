@@ -68,7 +68,7 @@ This endpoint sends an HTTP GET request to retrieve user information based on th
 
     ``` json
       {
-          "id": 0,
+          "id": 1,
           "name": "Divyamohan Kashyap",
           "email": "divyamohan.kashyap06@gmail.com",
           "created_at": "2024-01-19T22:26:04.000000Z",
